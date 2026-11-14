@@ -8,6 +8,9 @@ DEVICE_PATH := device/motorola/mumba
 # Inherit from motorola sm6450-common
 include device/motorola/sm6450-common/BoardConfigCommon.mk
 
+# Audio
+AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := $(PRODUCT_DEVICE)
 
@@ -32,3 +35,6 @@ BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(BOARD_AVB_ROLLBACK_INDEX)
 
 # Vendor
 include vendor/motorola/mumba/BoardConfigVendor.mk
+
+# SELinux
+BOARD_VENDOR_SEPOLICY_DIRS += hardware/dolby/sepolicy/vendor

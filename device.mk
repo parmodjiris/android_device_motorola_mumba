@@ -74,5 +74,12 @@ $(call inherit-product, device/motorola/sm6450-common/common.mk)
 # Vendor
 $(call inherit-product, vendor/motorola/mumba/mumba-vendor.mk)
 
+# Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
+
+# Moto Camera 5
+$(call add-product-dex-preopt-module-config,MotoSignatureApp,disable)
+$(call inherit-product, vendor/motorola/mumba-motcamera/mumba-motcamera-vendor.mk)
+
 # Wi-Fi
 TARGET_WIFI_VARIANTS := adrastea
