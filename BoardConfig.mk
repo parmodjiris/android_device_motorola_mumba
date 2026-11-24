@@ -152,7 +152,7 @@ BOARD_RECOVERY_KERNEL_MODULES_LOAD := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MOD
 BOARD_USES_METADATA_PARTITION := true
 
 # Partitions
-include vendor/lineage/config/BoardConfigReservedSize.mk
+include vendor/rr/config/BoardConfigReservedSize.mk
 BOARD_BUILD_VENDOR_RAMDISK_IMAGE := true
 BOARD_PRODUCTIMAGE_MINIMAL_PARTITION_RESERVED_SIZE := false
 
